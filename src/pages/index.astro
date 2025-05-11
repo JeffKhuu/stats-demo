@@ -1,0 +1,35 @@
+---
+import TeamEPAGraph from "../components/stats/TeamEPAGraph.astro";
+import "../styles/style.css"
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Stats Demo</title>
+</head>
+<body>
+	<section class="container" id="main">
+		<div class="segment">
+			<h1>Statistics</h1>
+	
+			<h2>The EPA Model</h2>
+			<p>
+				The Expected Points Added (EPA) Model was originally developed by <a
+					href="https://www.statbotics.io/blog/intro">Statbotics</a
+				> for use in the FIRST Robotics Competition (FRC). This is a demo using data from the 2025 season of the FIRST Tech Challenge.
+			</p>
+			<TeamEPAGraph />
+	
+			<a
+				class="disclaimer"
+				href="https://frc-events.firstinspires.org/services/API"
+				><p>Event Data provided by <i>FIRST</i></p></a
+			>
+		</div>
+	</section>
+
+</body>
+</html>
